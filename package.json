@@ -41,7 +41,7 @@
   },
   "main": "dist/js/jquery-asfPreload",
   "scripts": {
-    "test": "grunt travis --verbose"
+    "test": "grunt"
   },
   "engines": {
     "node": ">=0.10"
