@@ -134,6 +134,28 @@ module.exports = function(grunt) {
 				tasks: ['dist-css']
 			}
 		},
+		
+		qunit: {
+			options: {
+				inject: 'js/tests/unit/phantom.js'
+			},
+			files: 'js/tests/index.html'
+		},
+		
+		jshint: {
+			options: {
+				jshintrc: 'js/.jshintrc'
+			},
+			core: {
+				src: 'js/*.js'
+			},
+			test: {
+				options: {
+					jshintrc: 'js/tests/unit/.jshintrc'
+				},
+				src: 'js/tests/unit/*.js'
+			},
+		}
 	});
 	
 	// Load plugins
@@ -159,4 +181,7 @@ module.exports = function(grunt) {
 	
 	// Default task
 	grunt.registerTask('default', ['dist']);
+	
+	// Travis Task
+	grunt.registerTask('travis', ['jshint']);
 };
