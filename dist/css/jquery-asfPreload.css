@@ -1,0 +1,21 @@
+/*!
+ * Artscore Studio Preload jQuery Plugin v0.1.0 (https://github.com/artscorestudio/jquery-asfPreload)
+ * Copyright 2012-2014 Artscore Studio (http://www.artscore-studio.fr)
+ * Licensed under MIT License (https://github.com/artscorestudio/jquery-asfPreload/blob/master/LICENSE)
+ */
+
+.asfPreload {
+  position: absolute;
+  z-index: 9999999;
+}
+.asfPreload > div.percent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 33px;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: auto;
+  color: #fff;
+  text-align: center;
+}

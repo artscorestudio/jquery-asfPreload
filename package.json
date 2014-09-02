@@ -1,0 +1,40 @@
+{
+  "name": "artscore-studio-jquery-asfpreload",
+  "description": "jQuery Plugin for display a preload page with a progress bar.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/artscorestudio/jquery-asfPreload",
+  "keywords": [
+    "gruntplugin"
+  ],
+  "author": {
+    "name": "Artscore Studio",
+    "email": "info@artscore-studio.fr",
+    "url": "http://www.artscore-studio.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/artscorestudio/jquery-asfPreload.git"
+  },
+  "bugs": {
+    "url": "https://github.com/artscorestudio/jquery-asfPreload/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT License",
+      "url": "https://github.com/artscorestudio/jquery-asfPreload/blob/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+    "btoa": "~1.1.1",
+    "grunt": "~0.4.2",
+    "grunt-banner": "~0.2.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-csscomb": "~2.0.1",
+    "grunt-contrib-copy": "~0.5.0",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
