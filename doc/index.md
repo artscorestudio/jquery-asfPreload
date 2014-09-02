@@ -81,7 +81,30 @@ For installing asfPreload, create a json file in your web server root directory 
 
 And that's it ! Now, you can use it ! [Using asfPreload Plugin](blob/master/doc/use-plugin.md)
 
-> *DON'T FORGET TO INSTALL JQUERY WITH YOUR OWN WAY !!!!* You can install it with the method bellow or a other with Composer.
+If you want to install jquery with [Composer][2] :
+
+``̀ javascript
+	{
+		"require": {
+		    "jquery/jquery": "2.1.1-stable",
+		    "artscorestudio/jquery-asfPreload": "*"
+		},
+		"repositories": [{
+		    "type" : "package",
+			"package" : {
+				"name" : "jquery/jquery",
+				"version": "2.1.1-stable",
+				"source" : {
+					"url" : "https://github.com/jquery/jquery.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}]
+	}
+```
+
+> You can install jQuery via [Composer][1] with component system see bellow. 
 
 #### Install with Component system
 
