@@ -83,7 +83,7 @@ And that's it ! Now, you can use it ! [Using asfPreload Plugin](blob/master/doc/
 
 If you want to install jquery with [Composer][2] :
 
-``̀ javascript
+```javascript
 	{
 		"require": {
 		    "jquery/jquery": "2.1.1-stable",
