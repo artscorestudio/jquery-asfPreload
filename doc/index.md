@@ -40,7 +40,7 @@ Include css file in your head section :
 			<link href="__PATH_PLUGIN_FOLDER__/dist/css/jquery-asfPreload.min.css" rel="stylesheet" />
 		</head>
 	...
-`̀̀ `	
+```
 
 Include javascript files in the bottom of your page
 
@@ -53,7 +53,7 @@ Include javascript files in the bottom of your page
     <script src="__PATH_PLUGIN_FOLDER__/dist/js/jquery-asfPreload.min.js"></script>
 </body>
 </html>
-`̀̀ `
+```
 
 Now, you can use it ! [Using asfPreload Plugin](blob/master/doc/using-plugin.md)
 
