@@ -9,16 +9,13 @@ Prerequisites
 
 This jQuery plugin was developed with jQuery 2.1.1 minimum. No support for version lower than 2.1.1.  
 
-Installation instructions
--------------------------
-
 Translations
 ------------
 
 For the moment, the plugin don't require translations.
 
-Installation
-------------
+Installation instructions
+-------------------------
 
 You have 2 ways for installing asfPreload.
 
