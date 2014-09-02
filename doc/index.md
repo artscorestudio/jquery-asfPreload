@@ -81,7 +81,7 @@ For installing asfPreload, create a json file in your web server root directory 
 
 And that's it ! Now, you can use it ! [Using asfPreload Plugin](blob/master/doc/use-plugin.md)
 
-> *DON'T FORGET TO INSTALL JQUERY WITH YOUR OWN WAY !*
+> *DON'T FORGET TO INSTALL JQUERY WITH YOUR OWN WAY !!!!*\n
 > You can install it with the method bellow or a other with Composer.
 
 #### Install with Component system
