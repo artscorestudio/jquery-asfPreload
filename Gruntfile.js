@@ -169,7 +169,6 @@ module.exports = function(grunt) {
 		}
 	});
 	
-	
 	// JS distribution task
 	grunt.registerTask('dist-js', ['concat', 'uglify']);
 	
