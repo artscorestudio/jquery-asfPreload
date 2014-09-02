@@ -1,13 +1,3 @@
-/*!
- * Artscore Studio jQuery preload plugin
- * 
- * description : Preload jQuery Plugin based on Arthur Tomaszewski CProgress jQuery Plugin (http://p.ar2oor.pl/cprogress/)
- * author : Nicolas Claverie (info@artscore-studio.fr)
- * license : Licensed under MIT License
- * created: 2014-09-01
- * updated: 2014-09-02
- * version: 0.1.0
- */
 ;(function($,window,document,undefined){
 	
 	// Defaults

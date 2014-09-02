@@ -18,11 +18,23 @@
 	},
 	"require-dev" : {
 		"jquery/jquery": "2.1.*"
-	}
+	},
 	"sugggest": {
 	    "robloach/component-installer" : "Allows installation of Components via Composer.",
 		"components/jquery" : "Shim repository for the jQuery.",
 		"components/normalize.css" : "Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.",
 		"components/bootstrap" : "Shim repository for Bootstrap."
-	}
+	},
+	"repositories": [{
+	    "type" : "package",
+		"package" : {
+			"name" : "jquery/jquery",
+			"version": "2.1.1-stable",
+			"source" : {
+				"url" : "https://github.com/jquery/jquery.git",
+				"type" : "git",
+				"reference" : "master"
+			}
+		}
+	}]
 }
