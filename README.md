@@ -5,7 +5,8 @@ This document contains information on how to download, install, and start using 
 
 This plugin is based on [Arthur Tomaszewski CProgress jQuery Plugin](http://p.ar2oor.pl/cprogress/) distributed under MIT License.
 
-https://travis-ci.org/artscorestudio/jquery-asfPreload.svg?branch=master
+[![Build Status](https://travis-ci.org/artscorestudio/jquery-asfPreload.svg?branch=master)](https://travis-ci.org/artscorestudio/jquery-asfPreload)
+
 
 Documentation
 -------------
