@@ -39,10 +39,6 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-qunit": "~0.5.2"
   },
-  "main": "dist/js/jquery-asfPreload",
-  "scripts": {
-    "test": "grunt"
-  },
   "engines": {
     "node": ">=0.10"
   }
