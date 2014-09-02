@@ -55,7 +55,7 @@ Include javascript files in the bottom of your page
 </html>
 ```
 
-Now, you can use it ! [Using asfPreload Plugin](blob/master/doc/using-plugin.md)
+Now, you can use it ! [How to use asfPreload Plugin](blob/master/doc/using-plugin.md)
 
 ### Use Composer (*recommended*)
 
@@ -79,7 +79,7 @@ For installing asfPreload, create a json file in your web server root directory 
 }
 ```
 
-And that's it ! Now, you can use it ! [Using asfPreload Plugin](blob/master/doc/use-plugin.md)
+And that's it ! Now, you can use it ! [How to use asfPreload Plugin](blob/master/doc/use-plugin.md)
 
 If you want to install jquery with [Composer][2] :
 
