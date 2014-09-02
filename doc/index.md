@@ -71,7 +71,7 @@ http://getcomposer.org/ or just run the following command:
 
 For installing asfPreload, create a json file in your web server root directory and write in :
 
-```json
+```javascript
 {
     require: {
         "artscorestudio/jquery-asfPreload": "*"
