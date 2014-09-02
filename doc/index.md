@@ -67,7 +67,6 @@ http://getcomposer.org/ or just run the following command:
 
     curl -s http://getcomposer.org/installer | php
 
-[create_json_file]
 #### Create a composer.json file
 
 For installing asfPreload, create a json file in your web server root directory and write in :
