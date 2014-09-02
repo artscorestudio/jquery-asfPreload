@@ -1,5 +1,5 @@
 {
-	"name" : "Artscore Studio Preload jQuery Plugin",
+	"name" : "artscorestudio/jquery-asPreload",
 	"description" : "jQuery Plugin for display a preload page with a progress bar.",
 	"homepage" : "https://github.com/artscorestudio/jquery-asfPreload",
 	"authors" : [{
