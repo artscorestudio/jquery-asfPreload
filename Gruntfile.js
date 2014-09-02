@@ -183,5 +183,5 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['dist']);
 	
 	// Travis Task
-	grunt.registerTask('travis', ['jshint', 'qunit']);
+	grunt.registerTask('test', ['jshint', 'qunit']);
 };
