@@ -87,7 +87,7 @@ And that's it ! Now, you can use it ! [Using asfPreload Plugin](blob/master/doc/
 
 For installing asfPreload with [RobLoach/component-installer][4], create a json file in your web server root directory and write in :
 
-```json
+```javascript
 {
     require: {
         "robloach/component-installer" : "*",
