@@ -14,15 +14,15 @@
 		}
 	],
 	"require" : {
-		"robloach/component-installer" : "*",
-		"components/jquery" : "2.*",
-		"components/normalize.css" : "2.*",
-		"components/bootstrap" : "~3.1@stable"
+	 	"jquery/jquery": "2.1.*"
 	},
 	"require-dev" : {
-		"robloach/component-installer" : "*",
-		"components/jquery" : "2.*",
-		"components/normalize.css" : "2.*",
-		"components/bootstrap" : "~3.1@stable"
+		"jquery/jquery": "2.1.*"
+	}
+	"sugggest": {
+	    "robloach/component-installer" : "Allows installation of Components via Composer.",
+		"components/jquery" : "Shim repository for the jQuery.",
+		"components/normalize.css" : "Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.",
+		"components/bootstrap" : "Shim repository for Bootstrap."
 	}
 }

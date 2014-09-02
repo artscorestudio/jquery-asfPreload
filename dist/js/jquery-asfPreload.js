@@ -4,5 +4,3 @@
  * Licensed under MIT License (https://github.com/artscorestudio/jquery-asfPreload/blob/master/LICENSE)
  */
 
-if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery") }
-

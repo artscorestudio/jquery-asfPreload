@@ -89,35 +89,45 @@ For installing asfPreload with [RobLoach/component-installer][4], create a json 
 
 ```javascript
 {
-    require: {
+	...
+    "require": {
         "robloach/component-installer" : "*",
         "components/jquery" : "2.1.*",
         "components/jquery-asfpreload": "*"
     },
-    repository: [{
-        "name": "components/jquery-asfPreload",
-	"dist": {
-	    "url": "https://github.com/artscorestudio/jquery-asfPreload.git",
-	    "type": "git"
-	},
-	"type": "component",	
-	"require": {
-	    "robloach/component-installer": "*"
-	},
-	"extra": {
-	    "component": {
-	        "scripts": [
-		    "js/jquery-asfPreload.js"
-		],
-		"styles": [
-		    "css/jquery-asfPreload.css"
-		],
-		"files": [
-		    "img/*.png"
-		]
-	    }
-	}
-    }]
+    ,
+	"repositories": [{
+		"type" : "package",
+		"package" : {
+			"name" : "artscorestudio/jquery-asfpreload",
+			"type" : "component",
+			"version" : "0.1.0",
+			"source" : {
+				"url" : "https://github.com/artscorestudio/jquery-asfPreload.git",
+				"type" : "git",
+				"reference" : "master"
+			},
+			"extra" : {
+				"component" : {
+				 	"script": [
+				 	    "dist/js/jquery-asfPreload.js",
+				 	    "dist/js/jquery-asfPreload.min.js",
+				 	],
+				 	"styles": [
+				 	   	"dist/css/jquery-asfPrelod.css",
+				 	   	"dist/css/jquery-asfPrelod.min.css",
+				 	}
+					"files" : [
+						"img/*"
+					]
+				}
+			},
+			"require" : {
+				"robloach/component-installer" : "*"
+			}
+		}
+	}]
+	...
 }
 ```
 
