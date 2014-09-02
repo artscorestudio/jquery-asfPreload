@@ -1,0 +1,15 @@
+.asfPreload {
+  position:absolute;
+  z-index: 9999999; 
+}
+.asfPreload > div.percent {
+  position: absolute;
+  width:100%;
+  height:100%;
+  line-height:auto;
+  font-size: 2em;
+  font-weight: 700;
+  color: #FFF;   
+  text-align: center;
+  margin-top:33px
+}
