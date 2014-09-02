@@ -109,16 +109,16 @@ For installing asfPreload with [RobLoach/component-installer][4], create a json 
 			},
 			"extra" : {
 				"component" : {
-				 	"script": [
+				 	"scripts": [
 				 	    "dist/js/jquery-asfPreload.js",
-				 	    "dist/js/jquery-asfPreload.min.js",
+				 	    "dist/js/jquery-asfPreload.min.js"
 				 	],
 				 	"styles": [
-				 	   	"dist/css/jquery-asfPrelod.css",
-				 	   	"dist/css/jquery-asfPrelod.min.css",
-				 	}
+				 	   	"dist/css/jquery-asfPreload.css",
+				 	   	"dist/css/jquery-asfPreload.min.css"
+				 	],
 					"files" : [
-						"img/*"
+						"dist/img/*"
 					]
 				}
 			},
