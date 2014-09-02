@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         	},
         	dist: ['<%= distPath %>/*'] // Here grun-contrib-clean remove dist folder
         },
-		
+        	
 		// grunt-contrib-concat concatenate all files defined in the configuration below
 		concat: {
 			options: {
