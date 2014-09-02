@@ -1,13 +1,18 @@
 {
 	"name" : "artscorestudio/jquery-asfPreload",
 	"description" : "jQuery Plugin for display a preload page with a progress bar.",
+	"keywords" : [
+		"jquery plugin",
+		"jQuery",
+		"preload page"
+	],
 	"homepage" : "https://github.com/artscorestudio/jquery-asfPreload",
+	"license" : "MIT",
 	"authors" : [{
 			"name" : "Nicolas Claverie",
 			"email" : "info@artscore-studio.fr"
 		}
 	],
-	"license" : "MIT License",
 	"require" : {
 		"robloach/component-installer" : "*",
 		"components/jquery" : "2.*",
