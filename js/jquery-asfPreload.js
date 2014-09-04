@@ -200,10 +200,7 @@
 						base.$percent.html(base.options.limit);
 						base.coreDraw();
 						base.$element.trigger(base._eventName + 'onProgress', [base.options.limit]);
-						if (base.options.limit == 100) {
-							base.$element.trigger(base._eventName + 'onComplete');
-						}
-						
+						base.$element.trigger(base._eventName + 'onComplete');
 					}
 	
 					base.options.percent++;

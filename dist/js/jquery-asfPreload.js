@@ -9,23 +9,23 @@ if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery
 ;(function($,window,document,undefined){
 	
 	// Defaults
-	var pluginName = "asfPreload", 
+	var pluginName = 'asfPreload', 
 		defaults = {
 			percent: 0,                                                 // Starting percent
-			imgFolder: "Resources/artscorestudio/jquery-preload/img/",  // Images Folder
-			preloadEmptyImg: "preload-empty.png",                       // Empty loading image
-			preloadFullImg: "preload-full.png",                         // Full loading image
+			imgFolder: 'Resources/artscorestudio/jquery-preload/img/',  // Images Folder
+			preloadEmptyImg: 'preload-empty.png',                       // Empty loading image
+			preloadFullImg: 'preload-full.png',                         // Full loading image
 			speed: 200,                                                 // Speed of loading
 			PIStep: 0.10,                                               // PI step
 			limit: 100,                                                 // Limit of number (ex. : 140 : restart the animation with 40)
 			loop: false,                                                // Loop the animation
 			showPercent: true,                                          // Show percent number
-			progressBarStyle: "circle",                                 // Circle or horizontalBar
-			backgroundColor: "rgba(23,23,23,1)",                        // Background of the canvas
+			progressBarStyle: 'circle',                                 // Circle or horizontalBar
+			backgroundColor: 'rgba(23,23,23,1)',                        // Background of the canvas
 			onProgress: function(event, percent){},                     // onProgress Callback
 			onComplete: function(event){}                               // onComplete Callback
 		},
-		availablePBarStyles = ["horizontalBar", "circle"], base = null, eventName = 'asfPBar-';
+		availablePBarStyles = ['horizontalBar', 'circle'], base = null, eventName = 'asfPBar-';
 	
 	// Plugin constructor
 	function Plugin(element, options) {
@@ -91,8 +91,8 @@ if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery
 					height: $(window).height()
 				});
 				base.$progressBar.css({
-					"marginLeft": (base.$element.width() - base.width) / 2 + base.marginLeft,
-					"marginTop": (base.$element.height() - base.height) / 2 + base.marginTop,
+					'marginLeft': (base.$element.width() - base.width) / 2 + base.marginLeft,
+					'marginTop': (base.$element.height() - base.height) / 2 + base.marginTop,
 					opacity: 1
 				});
 			});
@@ -130,8 +130,8 @@ if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery
 			// Main container
 			base.$progressBar = $('<div />').addClass('asfPreload');
 			var checkPBarStyle = base.checkPBarStyle();
-			if (base.options.progressBarStyle == '' || base.options.progressBarStyle == undefined || checkPBarStyle == false) {
-				throw "The style of progress bar is unavailable (\"horizontalBar\" or \"circle\" are available)";
+			if (base.options.progressBarStyle === '' || base.options.progressBarStyle === undefined || checkPBarStyle === false) {
+				throw 'The style of progress bar is unavailable ("horizontalBar" or "circle" are available)';
 			}
 			base.$progressBar.addClass(base.options.progressBarStyle);
 			
@@ -147,12 +147,12 @@ if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery
 			base.width = base.preloadEmptyImg.width;
 			base.height = base.preloadEmptyImg.height;
 			
-			base.marginTop = parseInt(base.$progressBar.css('marginTop').replace("ems", ""));
-			base.marginLeft = parseInt(base.$progressBar.css('marginLeft').replace("ems", ""));
+			base.marginTop = parseInt(base.$progressBar.css('marginTop').replace('ems', ''));
+			base.marginLeft = parseInt(base.$progressBar.css('marginLeft').replace('ems', ''));
 			
 			base.$progressBar.css({
-				"marginLeft": (base.$element.width() - base.width) / 2 + base.marginLeft,
-				"marginTop": (base.$element.height() - base.height) / 2 + base.marginTop,
+				'marginLeft': (base.$element.width() - base.width) / 2 + base.marginLeft,
+				'marginTop': (base.$element.height() - base.height) / 2 + base.marginTop,
 				opacity: 0
 			});
 
@@ -175,18 +175,18 @@ if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery
 			if (base) {
 				base.$element.trigger(base._eventName + 'onInit', [base.options.percent]);
 				
-				if ( base.width == 0 || base.height == 0 ) {
+				if ( base.width === 0 || base.height === 0 ) {
 					base.reloadImages();
 				}
 				
-				if (base.options.showPercent == false) {
+				if (base.options.showPercent === false) {
 					base.$percent.hide();
 				} else {
 					base.$percent.show();
 				}
 				
 				if(base.stop != 1 && (base.options.percent - 1) <= base.options.limit){
-					if(base.options.loop == true){
+					if(base.options.loop === true){
 						base.options.limit=121;
 					}
 					if(base.options.percent >= 100 && base.options.percent <= base.options.limit){
@@ -208,10 +208,7 @@ if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery
 						base.$percent.html(base.options.limit);
 						base.coreDraw();
 						base.$element.trigger(base._eventName + 'onProgress', [base.options.limit]);
-						if (base.options.limit == 100) {
-							base.$element.trigger(base._eventName + 'onComplete');
-						}
-						
+						base.$element.trigger(base._eventName + 'onComplete');
 					}
 	
 					base.options.percent++;
@@ -267,8 +264,8 @@ if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery
 			base.height = base.preloadEmptyImg.height;
 			
 			base.$progressBar.css({
-				"marginLeft": ($(base.element).width() - base.width) / 2 + base.marginLeft,
-				"marginTop": ($(base.element).height() - base.height) / 2 + base.marginTop,
+				'marginLeft': ($(base.element).width() - base.width) / 2 + base.marginLeft,
+				'marginTop': ($(base.element).height() - base.height) / 2 + base.marginTop,
 			});
 			
 			base.$ctx.attr('width', base.width);
@@ -308,8 +305,8 @@ if (typeof jQuery === "undefined") { throw new Error("AsfPreload requires jQuery
 	
 	$.fn[pluginName] = function(options) {
 		return this.each(function(){
-			if (!$.data(this, "plugin_" + pluginName)) {
-				$.data(this, "plugin_" + pluginName, new Plugin(this, options));
+			if (!$.data(this, 'plugin_' + pluginName)) {
+				$.data(this, 'plugin_' + pluginName, new Plugin(this, options));
 			}
 		});
 	};
